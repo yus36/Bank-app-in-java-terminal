@@ -1,0 +1,96 @@
+class Calculator
+{
+
+    public int add(int n1,int n2)
+    {
+       int r = n1 + n2;
+       return r;
+    }
+}
+
+class Scratch {
+    public static void main(String[] args) {
+
+    int nim1 =5;
+    int nim=2;
+
+    Calculator calc = new Calculator();
+
+    int result = calc.add(nim,nim1);
+
+        System.out.println(result);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+enum Laptop
+{
+   Macbook(2000),XPC(2200),ThinkPad(1500);
+   private int price;
+
+     private Laptop(int price){
+        this.price = price;
+    }
+
+    public int  getPrice(){
+        return price;
+    }
+
+    public void setPrice(int price){
+        this.price = price;
+    }
+
+}
+
+
+
+class  Scratch{
+        public static void main(String[] args) {
+        for (Laptop lap : Laptop.values())
+        {
+            System.out.println( lap +":" + lap.getPrice());
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+import java.util.InputMismatchException;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+class  Scratch{
+        public static void main(String[] args) throws IOException {
+
+
+            System.out.println("Enter a number:");
+
+
+            InputStreamReader in = new InputStreamReader(System.in);
+            BufferedReader bf = new BufferedReader(in);
+
+            int num = Integer.parseInt(bf.readLine());
+           System.out.println(num);
+
+
+    }
+}
